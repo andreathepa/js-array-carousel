@@ -4,3 +4,45 @@
     box-sizing: border-box;
 }
 
+
+.container{
+    width: 800px;
+    height: 400px;
+    border: 3px solid red;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.content{
+    height: 100%;
+}
+
+.slide{
+    height: 100%;
+    display: none;
+}
+
+.slide.active{
+    display: block;
+}
+
+
+.next{
+    position: absolute;
+    top:0;
+    left: 47%;
+    transform: translate(0, 47%);
+    margin-top: 10px;
+    cursor: pointer;
+
+}
+
+.prev{
+    position: absolute;
+    bottom: 0;
+    left: 47%;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
