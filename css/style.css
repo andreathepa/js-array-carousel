@@ -21,7 +21,7 @@ body{
     width: 700px;
     height: 400px;
     background-color: aqua;
-    position: relative;
+    /* position: relative; */
 }
 
 .item{
@@ -39,30 +39,6 @@ body{
     object-fit: cover;
 }
 
-
-.next{
-    position: absolute;
-    bottom:0;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 10px;
-    cursor: pointer;
-    z-index: 100;
-    text-align: center;
-
-
-}
-
-.prev{
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-bottom: 10px;
-    cursor: pointer;
-    z-index: 100;
-    text-align: center;
-}
 
 .thumbs{
     height: 400px;
@@ -83,4 +59,26 @@ body{
     object-fit: cover;
     height: 100%;
     width: 100%;
+}
+
+.next{
+    position: absolute;
+    bottom:30%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10px;
+    cursor: pointer;
+    z-index: 100;
+
+
+}
+
+.prev{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 10px;
+    cursor: pointer;
+    z-index: 100;
 }

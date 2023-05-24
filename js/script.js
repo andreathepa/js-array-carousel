@@ -17,6 +17,9 @@ let activeItem = 0;
 const prev = document.querySelector('.prev');
 const next = document.querySelector('.next');
 
+// console.log(prev)
+// console.log(next)
+
 
 //ciclo array per riempire le stringhe con immagini
 for(let i=0; i<images.length; i++){
@@ -46,10 +49,11 @@ document.getElementsByClassName('thumb')[activeItem].classList.add('active');
 
 prev.addEventListener('click', function(){
     if(activeItem === 0){
-        activeItem = images.lenght -1;
+        activeItem = images.length -1;
     }
     else{
         activeItem--;
+
     }
 
     document.querySelector('.item.active').classList.remove('active');
@@ -57,10 +61,10 @@ prev.addEventListener('click', function(){
 
     document.querySelector('.thumb.active').classList.remove('active');
     document.getElementsByClassName('thumb')[activeItem].classList.add('active');
-})
+});
 
 next.addEventListener('click', function(){
-    if(activeItem === images.lenght -1){
+    if(activeItem === images.length -1){
         activeItem = 0;
     }
     else{
@@ -72,6 +76,6 @@ next.addEventListener('click', function(){
 
     document.querySelector('.thumb.active').classList.remove('active');
     document.getElementsByClassName('thumb')[activeItem].classList.add('active');
-})
+});
 
 
